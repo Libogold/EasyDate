@@ -102,6 +102,7 @@ static NSDateFormatter * cachedDeviceTimezoneDateTimeFormatter;
     }
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
+    [calendar setFirstWeekday:2];
     NSCalendarUnit flags;
     
     if(strEqual(dateType,@"weekStart") || strEqual(dateType,@"lastWeek") || strEqual(dateType,@"nextWeek")){
